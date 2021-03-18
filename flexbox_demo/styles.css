@@ -1,0 +1,346 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: black;
+}
+
+header {
+  font-size: 20px;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  width: 100%;
+  background-color: black;
+  height: 50px;
+}
+
+footer {
+  font-size: 16px;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  flex-shrink: 0;
+}
+
+.flex, .align--baseline, .align--stretch, .align--center, .align--flex-end, .align--flex-start, .justify--around, .justify--between, .justify--end, .justify--center, .justify--start, .direction--row-reverse, .direction--row, .direction--column-reverse, .direction--column, .example, .item, .flex-title, .example__title, .item__title, .element, header, body {
+  display: flex;
+}
+
+.flex-title, .example__title, .item__title, .element, header {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color: black;
+  width: 100%;
+  flex: 1 0 auto;
+}
+
+.element {
+  font-size: 30px;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  height: 70px;
+  width: 70px;
+  margin: 2px 2px;
+  border-radius: 15px;
+}
+
+.item {
+  font-size: 16px;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.item__title {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+.item__content {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  height: 100%;
+}
+.item__content--first {
+  background-color: #eb4034;
+}
+.item__content--second {
+  background-color: #5297c4;
+}
+.item__content--third {
+  background-color: #86cf95;
+}
+.item__content--fourth {
+  background-color: #ba6dbf;
+}
+
+.example {
+  flex-direction: column;
+  background-color: black;
+  align-items: center;
+  width: 50%;
+}
+.example__title {
+  font-size: 18px;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  background-color: white;
+  color: black;
+  width: 98%;
+  border-radius: 3px;
+  height: 30px;
+}
+.example__container {
+  font-size: 16px;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  display: grid;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: white;
+  width: 98%;
+  min-height: 500px;
+}
+
+.direction {
+  grid-template-rows: 2;
+  grid-template-columns: 3;
+}
+.direction__first {
+  grid-row: 1/3;
+  grid-column: 1;
+}
+.direction__second {
+  grid-row: 1/3;
+  grid-column: 2;
+}
+.direction__third {
+  grid-row: 1;
+  grid-column: 3;
+}
+.direction__fourth {
+  grid-row: 2;
+  grid-column: 3;
+}
+.direction--column {
+  flex-direction: column;
+  align-items: center;
+}
+.direction--column-reverse {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.direction--column {
+  flex-direction: column;
+  align-items: center;
+}
+.direction--column-reverse {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.direction--row {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.direction--row-reverse {
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.justify {
+  grid-template-rows: 3;
+  grid-template-columns: 2;
+}
+.justify__first {
+  grid-row: 1;
+  grid-column: 1;
+}
+.justify__second {
+  grid-row: 1;
+  grid-column: 2;
+}
+.justify__third {
+  grid-row: 2;
+  grid-column: 1;
+}
+.justify__fourth {
+  grid-row: 2;
+  grid-column: 2;
+}
+.justify__fifth {
+  grid-row: 3;
+  grid-column: 1/3;
+}
+.justify--start {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.justify--center {
+  flex-direction: row;
+  justify-content: center;
+}
+.justify--end {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.justify--between {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.justify--around {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.align {
+  grid-template-rows: 3;
+  grid-template-columns: 2;
+}
+.align__first {
+  grid-row: 1;
+  grid-column: 1;
+}
+.align__second {
+  grid-row: 1;
+  grid-column: 2;
+}
+.align__third {
+  grid-row: 2;
+  grid-column: 1;
+}
+.align__fourth {
+  grid-row: 2;
+  grid-column: 2;
+}
+.align__fifth {
+  grid-row: 3;
+  grid-column: 1/3;
+}
+.align .item__content--first {
+  height: 120px;
+}
+.align .item__content--third {
+  height: 100px;
+}
+.align .item__content--fourth {
+  height: 150px;
+}
+.align--flex-start {
+  flex-direction: row;
+  align-items: flex-start;
+}
+.align--flex-end {
+  flex-direction: row;
+  align-items: flex-end;
+}
+.align--center {
+  flex-direction: row;
+  align-items: center;
+}
+.align--stretch {
+  flex-direction: row;
+  align-items: stretch;
+}
+.align--stretch .item__content--first {
+  height: 150px;
+}
+.align--stretch .item__content--second {
+  height: 150px;
+}
+.align--stretch .item__content--third {
+  height: 150px;
+}
+.align--stretch .item__content--fourth {
+  height: 150px;
+}
+.align--baseline {
+  flex-direction: row;
+  align-items: baseline;
+}
+.align--baseline .item__content--first {
+  font-size: 80px;
+}
+.align--baseline .item__content--second {
+  font-size: 40px;
+}
+.align--baseline .item__content--third {
+  font-size: 20px;
+}
+.align--baseline .item__content--fourth {
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .example {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .example__container {
+    min-height: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .direction {
+    grid-template-rows: 3;
+    grid-template-columns: 2;
+  }
+  .direction__first {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .direction__second {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .direction__third {
+    grid-row: 2;
+    grid-column: 1/3;
+  }
+  .direction__fourth {
+    grid-row: 3;
+    grid-column: 1/3;
+  }
+
+  .justify {
+    grid-template-rows: 1;
+    grid-template-columns: 1;
+  }
+  .justify__first {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .justify__second {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .justify__third {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .justify__fourth {
+    grid-row: 4;
+    grid-column: 1;
+  }
+  .justify__fifth {
+    grid-row: 5;
+    grid-column: 1;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

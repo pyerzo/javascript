@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scael=1">
+    <title>Flexbox Practice</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <h2>FlexBox Examples</h2>
+    </header>
+    <section class="content">
+      <div class="example">
+        <div class="example__title">
+          FLEX-DIRECTION
+        </div>
+        <div class="example__container direction">
+          <div class="item direction__first">
+            <h2 class="item__title">COLUMN</h2>
+            <div class="item__content direction--column">
+              <div class="item__content--first element">1</div>
+              <div class="item__content--second element">2</div>
+              <div class="item__content--third element">3</div>
+              <div class="item__content--fourth element">4</div>
+            </div>
+          </div>
+          <div class="item direction__second">
+            <h2 class="item__title">COLUMN-REVERSE</h2>
+            <div class="item__content direction--column-reverse">
+              <div class="item__content--first element">1</div>
+              <div class="item__content--second element">2</div>
+              <div class="item__content--third element">3</div>
+              <div class="item__content--fourth element">4</div>
+            </div>
+          </div>
+          <div class="item direction__third">
+            <h2 class="item__title">ROW</h2>
+            <div class="item__content direction--row">
+              <div class="item__content--first element">1</div>
+              <div class="item__content--second element">2</div>
+              <div class="item__content--third element">3</div>
+              <div class="item__content--fourth element">4</div>
+            </div>
+          </div>
+          <div class="item direction__fourth">
+            <h2 class="item__title">ROW-REVERSE</h2>
+            <div class="item__content direction--row-reverse">
+              <div class="item__content--first element">1</div>
+              <div class="item__content--second element">2</div>
+              <div class="item__content--third element">3</div>
+              <div class="item__content--fourth element">4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example__title">
+          JUSTIFY-CONTENT
+        </div>
+        <div class="example__container justify">
+          <div class="item justify__first">
+            <h2 class="item__title">FLEX-START</h2>
+            <div class="item__content justify--start">
+              <div class="item__content--first element">1</div>
+              <div class="item__content--second element">2</div>
+              <div class="item__content--third element">3</div>
+              <div class="item__content--fourth element">4</div>
+            </div>
+          </div>
+          <div class="item justify__second">
+            <h2 class="item__title">FLEX-END</h2>
+            <div class="item__content justify--end">
+              <div class="item__content--first element">1</div>
+              <div class="item__content--second element">2</div>
+              <div class="item__content--third element">3</div>
+              <div class="item__content--fourth element">4</div>
+            </div>
+          </div>
+          <div class="item justify__third">
+            <h2 class="item__title">SPACE-AROUND</h2>
+            <div class="item__content justify--around">
+              <div class="item__content--first element">1</div>
+              <div class="item__content--second element">2</div>
+              <div class="item__content--third element">3</div>
+              <div class="item__content--fourth element">4</div>
+            </div>
+          </div>
+          <div class="item justify__fourth">
+            <h2 class="item__title">SPACE-BETWEEN</h2>
+            <div class="item__content justify--between">
+              <div class="item__content--first element">1</div>
+              <div class="item__content--second element">2</div>
+              <div class="item__content--third element">3</div>
+              <div class="item__content--fourth element">4</div>
+            </div>
+          </div>
+          <div class="item justify__fifth">
+            <h2 class="item__title">CENTER</h2>
+            <div class="item__content justify--center">
+              <div class="item__content--first element">1</div>
+              <div class="item__content--second element">2</div>
+              <div class="item__content--third element">3</div>
+              <div class="item__content--fourth element">4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="example">
+        <div class="example__title">
+          ALIGN-ITEMS
+        </div>
+        <div class="example__container align">
+          <div class="item align__first">
+            <h2 class="item__title">FLEX-START</h2>
+            <div class="item__content align--flex-start">
+              <div class="item__content--first element">1</div>
+              <div class="item__content--second element">2</div>
+              <div class="item__content--third element">3</div>
+              <div class="item__content--fourth element">4</div>
+            </div>
+          </div>
+          <div class="item align__second">
+            <h2 class="item__title">FLEX-END</h2>
+            <div class="item__content align--flex-end">
+              <div class="item__content--first element">1</div>
+              <div class="item__content--second element">2</div>
+              <div class="item__content--third element">3</div>
+              <div class="item__content--fourth element">4</div>
+            </div>
+          </div>
+          <div class="item align__third">
+            <h2 class="item__title">CENTER</h2>
+            <div class="item__content align--center">
+              <div class="item__content--first element">1</div>
+              <div class="item__content--second element">2</div>
+              <div class="item__content--third element">3</div>
+              <div class="item__content--fourth element">4</div>
+            </div>
+          </div>
+          <div class="item align__fourth">
+            <h2 class="item__title">STRETCH</h2>
+            <div class="item__content align--stretch">
+              <div class="item__content--first element">1</div>
+              <div class="item__content--second element">2</div>
+              <div class="item__content--third element">3</div>
+              <div class="item__content--fourth element">4</div>
+            </div>
+          </div>
+          <div class="item align__fifth">
+            <h2 class="item__title">BASELINE</h2>
+            <div class="item__content align--baseline">
+              <div class="item__content--first element">1</div>
+              <div class="item__content--second element">2</div>
+              <div class="item__content--third element">3</div>
+              <div class="item__content--fourth element">4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>
+    <footer>
+      Created by <strong>Erz
+    </footer>
+  </body>
+</html>
