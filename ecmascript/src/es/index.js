@@ -234,7 +234,35 @@ console.log(year, month, day)
 // Ecmascript 10 ===============================================================
 
 // Flat arrays -----------------------------------------------------------------
-// Trim arrays -----------------------------------------------------------------
+
+let listA = [1,2,3,[1,2,3,[1,2,3]]]
+console.log(listA.flat(2)) // PAram is deep plain level
+
+let listB = [1,2,3,4,5,6,7,8]
+console.log(listB.flatMap(val => [val, val*2]))
+
+// Trim ------------------------------------------------------------------------
+
+let msgA = '                 HI                       '
+console.log(msgA.trim())
+console.log(msgA.trimStart())
+console.log(msgA.trimEnd())
+
 // Manage exceptions -----------------------------------------------------------
+
+try {
+  //
+} catch {
+  console.log('Error without receive param')
+}
+
 // Matrix to array -------------------------------------------------------------
-// Prototype description -------------------------------------------------------
+
+let entriesA = [['name', 'Jhair'], ['age', 27]]
+console.log(Object.fromEntries(entriesA))
+
+// Symbol's description --------------------------------------------------------
+
+let mySymbol =  'My Symbol'
+let symbol = Symbol(mySymbol)
+console.log(symbol.description)
