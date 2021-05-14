@@ -1,0 +1,15 @@
+{
+  "name": "asynchronism",
+  "version": "1.0.0",
+  "description": "Asynchronism practice",
+  "main": "src/js/index.js",
+  "scripts": {
+    "callback": "node src/js/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jhair Patiño",
+  "license": "ISC",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
